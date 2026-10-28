@@ -1,0 +1,7 @@
+/* ============================================================
+   Perk Instant: lưới thẻ, bộ đếm số lượng
+   ============================================================ */
+.ingrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px;margin:10px 0}
+.ins{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:10px 14px 12px;display:flex;flex-direction:column;gap:4px}.ins.sel{border-color:var(--gd);box-shadow:0 0 0 2px var(--gd) inset}
+.ins-h{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.ins-h b{font:700 17px "Noto Serif","Times New Roman",Georgia,serif;color:var(--ac)}.ins-h .cost{margin-left:auto}.ins p{margin:2px 0}.ins .tip{margin:4px 0}
+.qty{display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:6px}.qty button{width:30px;height:30px;border-radius:50%;border:1px solid var(--bd);background:var(--hd);color:var(--tx);font-size:17px;line-height:1;cursor:pointer}.qty b{min-width:22px;text-align:center}

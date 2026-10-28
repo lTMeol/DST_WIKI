@@ -1,0 +1,9 @@
+/* ============================================================
+   Biến màu (sáng/tối), reset, typography
+   ============================================================ */
+:root{--bg:#f6f1e3;--sf:#fffdf4;--tx:#2a2418;--mu:#6b604a;--ac:#2b3a67;--gd:#9a7b1c;--bd:#ddd2b4;--hd:#e9dfc0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1426;--sf:#171e38;--tx:#ece6d2;--mu:#a9a28b;--ac:#e2c866;--gd:#e2c866;--bd:#2b3558;--hd:#1d2646}}
+:root[data-theme="dark"]{--bg:#0f1426;--sf:#171e38;--tx:#ece6d2;--mu:#a9a28b;--ac:#e2c866;--gd:#e2c866;--bd:#2b3558;--hd:#1d2646}
+html{scroll-padding-top:70px}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 "Be Vietnam Pro",system-ui,"Segoe UI",Roboto,"Noto Sans",sans-serif}
+h1,h2,h3{font-family:"Noto Serif","Times New Roman","Noto Serif","Times New Roman",Georgia,serif;line-height:1.25;color:var(--ac)}

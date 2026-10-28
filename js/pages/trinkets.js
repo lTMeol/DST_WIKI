@@ -1,0 +1,81 @@
+/* ============================================================
+   Trang sức
+   ============================================================ */
+const TR1=[
+["Mini Arcade","VẬT PHẨM MOD","Tăng XP nhận được. Mỗi stack cho thêm 25% (tối đa 400%). <i>Xem thêm ở phần Reign of Giants.</i>","Đây là trang sức chính cho cuối game."],
+["Dessicated Tentacle","","Bạn không còn kích hoạt Tentacle nữa.","Rất hợp cho đầu game! Có thể khám phá khu đầm lầy một cách an toàn, thu hoạch sậy và thu thập tài nguyên trong lúc Tentacle và merm giao tranh tự nhiên."],
+["Fake Kazoo","","Có xác suất không tiêu hao độ bền khi chơi nhạc cụ. Mỗi stack cho thêm 6% (tối đa 66%).","Dùng được cho mọi nhạc cụ (kể cả nhạc cụ từ mod khác)."],
+["Frazzled Wires","","Tăng khả năng bị sét đánh. Mỗi stack cho thêm 10% (tối đa 100%). Hãy theo dõi Suspicious Boss Pile khi trang bị trang sức này để có bất ngờ!",""],
+["Lying Robot","","Sau nửa ngày, mất 1 stack trang sức này và nhận một lượng bánh răng ngẫu nhiên (tối thiểu 3, tối đa 8 bánh răng).",""],
+["Gord's Knot","","Cứ 2 stack trang sức này được tính là có 1 sợi dây thừng. Nó thay thế nguyên liệu chế tạo trong khi Gord's Knot sẽ không bị tiêu hao.","Hãy cất trang sức này gần khu vực chế tạo và trang bị nó trước khi chế tạo để tiết kiệm rất nhiều cỏ."],
+["Mismatched Buttons","","Nhận một lượng XP ngẫu nhiên mỗi khi bạn dùng Sewing Kit. Có thể nhận nhiều XP hơn khi có nhiều stack (tối thiểu 1, tối đa 10+ XP, lên tới 1000 XP).",""],
+["Gnome and Gnomette","","<ul><li>Nếu bạn trang bị “Gnome” hoặc “Gnomette” khi chiến đấu gần một hoặc nhiều người chơi trang bị loại trang sức đối lập, cả hai người chơi sẽ nhận hồi tinh thần và máu, tăng theo số lượng trang sức mà những người chơi kia đang trang bị.</li><li>Mỗi stack cho +0,2 hồi phục mỗi giây (tối đa 5).</li><li>Nếu bạn dùng “Telelocator Staff”, bạn sẽ được dịch chuyển đến một người chơi ngẫu nhiên đang trang bị loại trang sức đối lập.</li></ul>","Bạn có thể lợi dụng điều này bằng cách đánh “Chester”, để nhận hồi máu và tinh thần trong thời gian dài."],
+["Ball and Cup","","Khi câu cá ở ao, số cá câu được nhân đôi.","Nên dùng để câu “Crumpled Packages” ở “Lake” trong “Oasis” để lấy bản thiết kế/trang sức hiếm."],
+["Hardened Rubber Bung","","<ul><li>Tự động sửa chỗ rò rỉ của thuyền sau 5 giây kể từ khi xuất hiện.</li><li>Mỗi stack giảm thời gian chờ đi 0,5 giây (tối thiểu 0,5 giây).</li><li>Chỉ sửa chỗ rò rỉ khi bạn đang đứng trên thuyền.</li></ul>","Bắt buộc khi chiến đấu với “Crabking”, “Malbatross”, “Pirate Raids”, “Sea Weeds” hoặc “Cookie Cutters”."],
+["Air Unfreshener","","Giúp bạn miễn nhiễm với hào quang tinh thần tiêu cực.","Nếu không có trang sức chiến đấu nào khác, Air Unfreshener cũng có thể hữu ích khi đánh trùm."],
+["Back Scratcher","","Tăng tầm nhặt vật phẩm. Mỗi stack cho thêm 1 điểm tầm (tối đa 20).","Với đủ stack, “Back Scratcher” có thể dùng để nhặt vật phẩm từ “Cave Hole”."],
+["Beaten Beater","","Nhận thêm XP khi nấu ăn. Mỗi stack cho thêm 2 XP (tối đa 24).","Khi chơi Warly, nấu ăn với một stack đầy “Beaten Beater” sẽ nhận 240 XP. Kết hợp với Perk Cook Master để cày XP nhanh hơn cả việc giết trùm theo mùa!"],
+["Bent Spork","","Nhận thêm độ đói khi ăn thức ăn. Mỗi stack cho thêm 1 độ đói (tối đa 15).","“Bent Spork” rất hợp cho đầu game, vì nó tăng hiệu quả của mọi loại thức ăn, kể cả berry sống."],
+["Frayed Yarn","","Kết bạn với các “Catcoon” ở gần. Những “Catcoon” đi theo được hồi đầy máu mỗi 3 giây. Mỗi stack tăng số lượng người đi theo tối đa thêm 1.",""],
+["Wire Hanger","","Miễn nhiễm với gai của cây.",""],
+["Second-hand Dentures","","Nhận độ đói mỗi khi bạn giết một sinh vật nhỏ. Mỗi stack cho 0,4 độ đói (tối đa 10).","Vài stack món này rất hợp để thám hiểm dài ngày. Không cần thức ăn dễ hỏng, bạn có thể hồi độ đói bằng cách giết 4-10 con nhện, loài có rất nhiều khắp bản đồ, kể cả trong hang động."],
+["White Knight","","Tăng tốc độ khi cưỡi. Mỗi stack cho thêm 8% (tối đa 120%).","Người bạn thân nhất của Walter!"],
+["White Bishop","","Dùng gậy phép sẽ hồi tinh thần thay vì tiêu hao nó.",""],
+["White Rook","","Sửa tường sẽ khôi phục ngay lập tức về trạng thái đầy đủ.",""],
+["Black Knight","","Tăng sát thương cho vật cưỡi khi đang cưỡi. Mỗi stack cho thêm 10% (tối đa 200%).","“Black Knight” không tăng sát thương của người chơi mà tăng sát thương của vật cưỡi, nên rất hữu ích để “lách” các trận đánh trùm với một con “Beefalo” ngang bướng."],
+["Black Bishop","","Dùng gậy phép sẽ không tiêu hao độ bền, nhưng thay vào đó sẽ tiêu hao gấp đôi lượng tinh thần thông thường. Khi kích hoạt, “Black Bishop” có 25% xác suất bị tiêu hao.",""],
+["Black Rook","","Phá hủy ngay lập tức tường khi tấn công chúng, đồng thời hồi tinh thần. Mỗi stack cho thêm 5 tinh thần (tối đa 40).",""],
+["Leaky Teacup","","Khi bạn uống một “Soothing Tea”, sẽ mất 1 stack “Leaky Teacup” để bắt đầu chuỗi tiệc trà. Tất cả người chơi ở gần có thể uống một “Soothing Tea” để tham gia tiệc trà. Tất cả người chơi tham gia đều nhận <b>Sao</b> (họ không cần trang bị Leaky Teacup). Số Sao nhận được bằng số người chơi trong buổi tiệc.",""],
+["Melty Marbles","","Mỗi khi bạn phá một “Marble Tree” hoặc “Marble Shrub”, nhận một lượng “Melty Marbles” ngẫu nhiên (tối thiểu 1, tối đa 5 “Melty Marbles”).","Vì “Melty Marbles” có thể đổi với “Pig King” lấy vàng cục, nên cày đá cẩm thạch khi trang bị món này chẳng khác gì làm bất động sản."],
+["Potato Cup","","Cho phép người chơi mở rương khi đang cưỡi.",""],
+["Lucky Cat Jar","","Tăng Luck (may mắn). Mỗi stack cho thêm 0,2 Luck (tối đa 5).",""],
+["Tiny Rocketship","","Ngẫu nhiên tăng tốc độ di chuyển trong thời gian ngắn.","Vì tốc độ là chỉ số quan trọng nhất, “Tiny Rocketship” nhìn chung là một trang sức hữu ích."],
+["Shoe Horn","","Giúp người chơi miễn nhiễm với việc trượt trên băng hoặc bị làm chậm bởi địa hình.",""],
+["Unbalanced Top","","Có xác suất nhận một viên đá quý ngẫu nhiên khi đào mỏ. Mỗi stack cho thêm 4% (tối đa 100%).",""],
+["Toy Trojan Horse","","Động vật không sợ bạn (không còn bị coi là con mồi).","Công dụng chính là giúp việc săn “Koalefants”, “Mooslings”, “Rabbits”, “Birds” và “Volt Goats” dễ dàng hơn nhiều. Muốn có thịt vụn vô hạn? Hãy đến lãnh thổ thỏ và giết chúng bằng giáo (không cần đuổi vì chúng sẽ không chạy) hoặc đặt bẫy ngay trước mặt chúng. Bạn cũng có thể thả một hạt giống để thu hút chim rồi giết chúng trước khi chúng ăn."],
+["Crocodile Toy","","Có xác suất giết ngay lập tức các sinh vật đang bơi. Mỗi stack cho thêm 10% xác suất (tối đa 100%).","Vì chó săn là loài lưỡng cư, “Crocodile Toy” có thể cứu mạng bạn khi bị chó săn tấn công."],
+["Empty Elixir","","Khi dùng vật phẩm hồi máu, những người chơi ở gần nhận 25% hiệu quả hồi máu. Mỗi stack cho thêm 5% (tối đa 100%).",""],
+["Faux Fangs","","Tăng 30% sát thương gây ra vào ban đêm, nhưng giảm cùng mức đó vào ban ngày. Mỗi stack tăng hiệu ứng thêm 3% (tối đa 99%).",""],
+["Lone Glove","","Nắm chặt vũ khí. Không thể bị tước vũ khí.",""],
+["Snail Scale","","Tăng cân nặng của cá câu được. Mỗi stack tăng xác suất câu được cá nặng hơn, với 40 stack đảm bảo cân nặng cá tối đa.","Cũng tính cho cá câu bằng “Strident Trident”."],
+["Goop Canister","","Khi nạp nhiên liệu cho vật phẩm, cung cấp thêm nhiên liệu. Mỗi stack tăng sức mạnh nhiên liệu thêm 50% (tối đa 900%).","Các nhân vật vốn đã cung cấp thêm nhiên liệu sẽ không nhận hiệu ứng bổ sung."],
+["Toy Cobra","","Nhận máu mỗi khi bạn giết một sinh vật nhỏ. Mỗi stack cho 0,2 máu (tối đa 5).",""],
+["Broken Stake","","Có xác suất giết ngay lập tức các sinh vật bóng tối khi tấn công chúng. Mỗi stack cho thêm 4% xác suất (tối đa 80%).",""],
+["Odd Radio","","Tăng XP nhận được khi chơi một mình trên máy chủ (không có người chơi khác). Mỗi stack cho thêm 1 XP (tối đa 10).",""],
+["Broken Hairdryer","","Tan băng ngay lập tức khi bị đóng băng.",""],
+["Binoculars","","Tăng tầm thi triển. Mỗi stack cho thêm 1 điểm tầm (tối đa 20).",""],
+["Spider Ring","","Gây thêm sát thương lên nhện. Mỗi stack cho hệ số nhân sát thương 20% (tối đa 200%).",""],
+["Cubic Zirkonia Ball","","Phản sát thương lại cho kẻ tấn công, nhưng tăng sát thương nhận vào thêm 100%. Mỗi stack cho thêm 10% sát thương phản lại (tối đa 330%).",""],
+["Broken Terrarium","","Không thể chết vì sát thương chí tử, nhưng mỗi lần dùng sẽ mất 1 stack “Broken Terrarium”.",""],
+["Monkey Paw","","Ngăn bạn thu hút “Accursed Trinkets”.",""]];
+const TR2=[
+["Old Boot","Don't Starve","Tăng tốc độ chạy. Mỗi stack tăng 10% (tối đa 170%).","Chạy xảy ra khi người chơi đứng trên một số loại địa hình nhất định (như đường). Mặc định, tốc độ chạy bằng 130% tốc độ đi bộ. Điều này nghĩa là với số stack tối đa, người chơi có thể đạt tới 300% tốc độ chạy."],
+["Sextant","Don't Starve","Khi tấn công bằng đạn, bắn thêm 2 viên đạn theo góc 30° sang trái và phải.",""],
+["Toy Boat","Don't Starve","Tăng tốc độ nổi thêm 1000%.","Nổi nghĩa là người chơi đang dùng Personal Floater."],
+["Sea Worther","Don't Starve","Không thể bị nhắm làm mục tiêu tấn công khi đang Steering.","Có thể dùng trong tình huống nguy cấp khi bạn chưa sẵn sàng chiến đấu. Tuy nhiên, nó không ảnh hưởng đến những quái vật đã nhắm vào bạn. Steering Wheel có thể đặt ở bất cứ đâu, kể cả trên đất liền, nên rất hữu ích ngay cả khi bạn không ở trên thuyền."],
+["Soaked Candle / Wine Bottle Candle","Don't Starve / Shipwrecked","Khi các vật thể ở gần bắt đầu cháy hoặc âm ỉ cháy, tự động dập tắt chúng.",""],
+["Ancient Vase","Shipwrecked","Nhận hệ số nhân sát thương. Mỗi stack tăng 5% (tối đa 200%). Mỗi khi người chơi bị tấn công, vỡ 1 stack Ancient Vase.",""],
+["Brain Cloud Pill","Shipwrecked","Gây điên loạn.",""],
+["Broken AAC Device","Shipwrecked","Giảm 50% XP nhận được của người chơi “mime”.","Công dụng duy nhất là làm game khó hơn."],
+["One True Earring","Shipwrecked","Tự động hồi sinh Beefalo của bạn khi nó chết. Tiêu hao 1 stack One True Earring.",""],
+["License Plate","Shipwrecked","Nhận Right of Passage. (Người chơi không còn bị Powder Monkey ở Moon Quay nhắm tới).","Hiệu ứng của trang sức này mang tính Global: nếu bất kỳ người chơi nào dùng, tất cả người chơi đều có Right of Passage."],
+["Orange Soda","Shipwrecked","Ngẫu nhiên tăng tốc độ di chuyển trong thời gian ngắn.","Hiệu ứng giống trang sức “Tiny Rocketship”, nhưng nhanh hơn nhiều và thời gian tăng tốc ngắn hơn."],
+["Ukulele","Shipwrecked","Định kỳ chăm sóc các Farm Plant ở gần. Tăng XP nhận được khi trồng và chăm sóc Farm Plant. Mỗi stack tăng XP nhận được thêm 1 (tối đa 20).","Trang sức cực kỳ mạnh cho Wormwood, người nhận nhiều hơn 400% XP khi trồng và chăm sóc cây trồng."],
+["Voodoo Doll","Shipwrecked","Chuyển hướng sát thương phải nhận sang người chơi gần nhất.","Trang sức dành cho dân troll? Hay để giúp người bạn mới chơi của bạn? Hy vọng chúng tôi không phải cấm người chơi vì troll bằng món này :)"],
+["Queen Malfalfa","Hamlet","Mỗi khi bạn đưa một Trinket cho Pig King, nhận 1 Pig đi theo.",""],
+["Post Card of the Royal Palace","Hamlet","Bạn có thể ngủ bên trong Pig House trống.","Bạn sẽ bị đuổi ra khi Pig vào nhà. Để tránh điều này, hãy giết Pig trước để nó không làm gián đoạn giấc ngủ của bạn."],
+["Can of Silly String","Hamlet","Khi người chơi sắp bị tấn công, né đòn tấn công đó nhưng tiêu hao 1 stack Can of Silly String.",""]];
+const TR3=[
+["Dev Mug","CZ Trinket","Miễn nhiễm hoàn toàn với trạng thái choáng váng (grogginess).","Hữu ích khi chiến đấu với kẻ địch có thể khiến bạn ngủ."],
+["Floppy Disc","Idu Trinket","Khi tấn công, quay lại vị trí bước chân cuối cùng của bạn.","Hoạt động giống Backstep Watch nhưng tự động kích hoạt khi tấn công. Tốt cho người mới không biết kite, nhưng gây phiền hơn cho cao thủ kite."],
+["#1 Battlesongs Fan","Rainboom Trinket","Mỗi khi bạn hát một bài hát tức thời, một chú chó săn thân thiện tạm thời sẽ đi theo bạn. Chú chó này nhận ít hơn 50% sát thương và có hệ số nhân sát thương dựa trên số stack #1 Battlesongs Fan. Mỗi stack tăng hệ số nhân sát thương thêm 3% (tối đa 600%).","Tạm thời nghĩa là nó sẽ biến mất khi bạn tải lại (không lưu lại)."],
+["Framed Dead Spritter","Vini Trinket","Mỗi khi bạn chế tạo một công thức từ mod, một Moon Moth sẽ xuất hiện. Moon Moth này có 10% xác suất rơi bơ khi bị giết.","Đơn giản nhưng hữu ích, vì bơ chỉ có 2% xác suất rơi từ bướm."]];
+const TBAR=`<div class="bar"><input type="search" placeholder="Tìm trang sức…" oninput="const q=this.value.trim().toLowerCase();document.querySelectorAll('details.tr[data-n]').forEach(d=>d.style.display=d.dataset.n.includes(q)?'':'none')"><button onclick="document.querySelectorAll('details.tr').forEach(d=>d.open=true)">Mở tất cả</button><button onclick="document.querySelectorAll('details.tr').forEach(d=>d.open=false)">Thu gọn</button></div>`;
+const TRK={"Mini Arcade": "tr12", "Dessicated Tentacle": "tr14", "Fake Kazoo": "tr16", "Frazzled Wires": "tr18", "Lying Robot": "tr19", "Gord's Knot": "tr20", "Mismatched Buttons": "tr22", "Gnome and Gnomette": "tr23", "Ball and Cup": "tr26", "Hardened Rubber Bung": "tr28", "Air Unfreshener": "tr30", "Back Scratcher": "tr32", "Beaten Beater": "tr34", "Bent Spork": "tr35", "Frayed Yarn": "tr37", "Wire Hanger": "tr38", "Second-hand Dentures": "tr39", "White Knight": "tr40", "White Bishop": "tr42", "White Rook": "tr43", "Black Knight": "tr44", "Black Bishop": "tr46", "Black Rook": "tr47", "Leaky Teacup": "tr48", "Melty Marbles": "tr49", "Potato Cup": "tr50", "Lucky Cat Jar": "tr51", "Tiny Rocketship": "tr52", "Shoe Horn": "tr53", "Unbalanced Top": "tr54", "Toy Trojan Horse": "tr55", "Crocodile Toy": "tr57", "Empty Elixir": "tr58", "Faux Fangs": "tr59", "Lone Glove": "tr60", "Snail Scale": "tr61", "Goop Canister": "tr63", "Toy Cobra": "tr64", "Broken Stake": "tr65", "Odd Radio": "tr66", "Broken Hairdryer": "tr67", "Binoculars": "tr68", "Spider Ring": "tr69", "Cubic Zirkonia Ball": "tr70", "Broken Terrarium": "tr71", "Monkey Paw": "tr72", "Old Boot": "tr73", "Sextant": "tr74", "Toy Boat": "tr75", "Sea Worther": "tr77", "Soaked Candle / Wine Bottle Candle": "tr78", "Ancient Vase": "tr79", "Brain Cloud Pill": "tr80", "Broken AAC Device": "tr81", "One True Earring": "tr82", "License Plate": "tr83", "Orange Soda": "tr85", "Ukulele": "tr87", "Voodoo Doll": "tr89", "Queen Malfalfa": "tr91", "Post Card of the Royal Palace": "tr92", "Can of Silly String": "tr93", "Dev Mug": "tr94", "Floppy Disc": "tr95", "#1 Battlesongs Fan": "tr96", "Framed Dead Spritter": "tr97"};
+const TRL=r=>r.map(x=>DT(x[0],x[1],x[2]+(x[0]=='Gnome and Gnomette'?'<img class="gn" data-i="gnome2" alt="Gnome">':'')+(x[3]?BTP(x[3]):''),'',TRK[x[0]])).join('');
+const SEC4=[
+['tr-gt','Giới thiệu',`<p>Nhận Perk <b>Enchantmemento</b> (<span class="st">15 ★</span>) để có <b>ô Trang sức</b> trên HUD chính. Mỗi trang sức mang lại một khả năng đặc biệt và nhiều trang sức có thể <b>cộng dồn theo stack</b>. Bấm vào tên từng trang sức để xem hiệu ứng.</p>${TBAR}`,[]],
+['tr-th','Trang sức thường',`<p>${TR1.length} trang sức.</p>${TRL(TR1)}`,[]],
+['tr-dlc','Trang sức DLC',`<p><b>VẬT PHẨM DLC.</b> Có thể kiếm được từ các mod khác thêm Shipwrecked/Hamlet hoặc bằng Perk <b>Souvenirs Stands</b>.</p>${TRL(TR2)}`,[]],
+['tr-moi','Trang sức mới',`${TRL(TR3)}`,[]]];
+

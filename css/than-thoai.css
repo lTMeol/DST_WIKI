@@ -1,0 +1,6 @@
+/* Mod Thần Thoại Thư Thuyết – chỉ phần bổ sung; bảng/tab/ghi chú dùng CSS có sẵn (.tw, .tabs, .tip) */
+.tt-tag{display:inline-block;margin:2px 4px 2px 0;padding:2px 9px;border-radius:999px;font-size:.85em;background:color-mix(in srgb,currentColor 10%,transparent)}
+.tt-thanks{margin-top:24px;padding-top:12px;border-top:1px dashed color-mix(in srgb,currentColor 30%,transparent);opacity:.85;font-style:italic}
+.tt-fig{margin:12px 0;text-align:center}
+.tt-fig img{max-width:min(100%,280px);height:auto}
+.tt-fig figcaption{font-size:.85em;opacity:.75;margin-top:4px}

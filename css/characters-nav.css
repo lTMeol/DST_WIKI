@@ -1,0 +1,7 @@
+/* ============================================================
+   Chip cuộn ngang, điều hướng nhân vật, ô sắp xếp
+   ============================================================ */
+.chips{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}.chips a{flex:none;white-space:nowrap}
+.chnav{display:flex;gap:8px;margin:6px 0 16px}.chnav a{flex:1;text-align:center;padding:7px 10px;border:1px solid var(--gd);border-radius:10px;background:var(--hd);color:var(--ac);font-weight:700;font-size:14px;cursor:pointer}.chnav a.ls{flex:1.4;background:var(--ac);color:var(--sf);border-color:var(--ac)}.chnav a:hover{filter:brightness(1.1)}
+.card .cst{display:block;margin-top:2px;color:var(--gd);font-weight:600}
+#chs{font:inherit;font-size:14px;border:1px solid var(--bd);background:var(--hd);color:var(--tx);border-radius:8px;padding:4px 8px}

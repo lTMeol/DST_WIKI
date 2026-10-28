@@ -1,0 +1,19 @@
+/* ============================================================
+   Tabs, accordion (details.tr), tag, thanh tìm kiếm (.bar)
+   ============================================================ */
+.tabs{display:flex;gap:8px;margin:0 0 20px;border-bottom:2px solid var(--bd);flex-wrap:wrap}
+.tabs a{padding:9px 18px;border:1px solid var(--bd);border-bottom:0;border-radius:10px 10px 0 0;background:var(--hd);color:var(--mu);font-weight:600;cursor:pointer;text-decoration:none;margin-bottom:-2px}
+.tabs a.on{background:var(--sf);color:var(--ac);border-bottom:2px solid var(--sf);border-top:3px solid var(--gd)}
+.st{color:var(--gd);white-space:nowrap;font-weight:700}
+td.num,th.num{text-align:center;white-space:nowrap}
+.tr{border:1px solid var(--bd);border-radius:10px;margin:8px 0;background:var(--sf)}
+.tr summary{cursor:pointer;padding:9px 14px;font-weight:700;color:var(--ac);list-style:none;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tr summary::-webkit-details-marker{display:none}
+.tr summary:before{content:"▸";color:var(--gd);transition:transform .15s}
+.tr[open] summary:before{transform:rotate(90deg)}
+.tr summary:hover{background:var(--hd);border-radius:10px}
+.tr>div{padding:2px 16px 12px 32px}
+.tg{font-size:12px;font-weight:600;color:var(--mu);border:1px solid var(--bd);border-radius:20px;padding:0 8px;background:var(--hd)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0;align-items:center}
+.bar button,.bar input{font:inherit;font-size:14px;border:1px solid var(--bd);background:var(--hd);color:var(--tx);border-radius:8px;padding:5px 12px}
+.bar button{cursor:pointer}.bar input{flex:1;min-width:160px;background:var(--sf)}

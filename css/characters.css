@@ -1,0 +1,16 @@
+/* ============================================================
+   Trang nhân vật: lưới thẻ, chip lọc, phần thưởng
+   ============================================================ */
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin:18px 0}
+.cg .card img{aspect-ratio:3/4;object-fit:contain;padding:10px 10px 0;background:var(--hd)}.cg .card div{text-align:center;padding:8px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 16px}.chips a{display:flex;align-items:center;gap:5px;padding:3px 10px 3px 4px;border:1px solid var(--bd);border-radius:20px;background:var(--hd);color:var(--tx);font-size:13.5px;cursor:pointer}.chips a img{width:22px;height:22px;object-fit:contain;border-radius:50%;background:var(--sf)}.chips a.on{border-color:var(--gd);color:var(--ac);font-weight:700}
+.chh{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-bottom:18px}.chh>img{width:170px;border-radius:12px;background:var(--hd);padding:8px}.chh h1{margin:0 0 8px}
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:6px 22px}.sg div{display:flex;justify-content:space-between;gap:8px;border-bottom:1px dotted var(--bd);padding:2px 0}.sg i{font-style:normal;color:var(--gd);letter-spacing:2px;white-space:nowrap}
+.cb{background:var(--gd);color:var(--sf);border-radius:20px;padding:0 10px;font-size:14px;margin-left:8px;vertical-align:middle}
+.rw{display:flex;gap:12px;align-items:flex-start;margin:10px 0;padding:8px 12px;background:var(--bg);border:1px solid var(--bd);border-left:4px solid var(--gd);border-radius:10px}
+.rw>div p+p{margin-top:4px}
+.rw .ic{min-width:44px;justify-content:center}
+article section .tip.bl{margin:12px 0}
+.chsub{margin:22px 0 4px;padding:4px 0 4px 12px;border-left:4px solid var(--ac);color:var(--ac);font-family:"Noto Serif","Times New Roman",Georgia,serif;font-size:18px;font-weight:700}.rw .ic{display:flex;gap:4px;flex:none}.rw .ic img{width:44px;height:44px;object-fit:contain}.rw p{margin:0}
+.fig.sm img{max-width:300px}
+

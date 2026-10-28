@@ -1,0 +1,32 @@
+/* ============================================================
+   Mod Yêm Đốc Tiên: ảnh, video, slogan, pháp bảo, thư viện
+   ============================================================ */
+.yd-pic{height:80px;width:auto;vertical-align:middle;margin:0 10px 4px 0;border-radius:10px;background:#fffdec;border:1px solid var(--bd);padding:3px;cursor:zoom-in}.yd-vid video{display:block;width:100%;max-width:640px;aspect-ratio:16/9;margin:0 auto;border-radius:10px;border:1px solid var(--bd);background:#000}.yd-vid{margin:12px 0}
+.pb-rc{display:flex;flex-wrap:wrap;align-items:flex-start;gap:8px 12px;font-size:24px;color:var(--gd);margin:10px 0 14px}
+.pb-rc>.pb-t{font-size:12px;color:var(--tx)}.pb-rc{line-height:1}
+.pb-t{display:inline-flex;flex-direction:column;align-items:center;width:84px;text-align:center}
+.pb-i{position:relative;display:block;width:76px;height:76px;border:1px solid var(--bd);border-radius:12px;background:var(--hd);overflow:hidden}
+.pb-t.fin .pb-i{border-color:var(--gd);box-shadow:0 0 0 1px var(--gd)}
+.pb-i img{width:100%;height:100%;object-fit:contain;display:block}
+.pb-i em{position:absolute;right:3px;bottom:3px;font-style:normal;font-size:11px;font-weight:700;background:rgba(0,0,0,.65);color:#fff;border-radius:9px;padding:1px 6px}
+.pb-t small{margin-top:5px;font-size:11px;line-height:1.25;font-weight:600}.pb-t.fin small{font-weight:800}
+.pb-big{float:right;width:260px;max-width:42%;margin:0 0 12px 22px;text-align:center}
+.pb-big img{width:100%;height:auto;display:block;filter:drop-shadow(0 4px 8px rgba(0,0,0,.35))}
+.pb-big figcaption{margin-top:8px;font-weight:700}
+@media(max-width:700px){.pb-big{float:none;margin:0 auto 12px;max-width:70%}}
+.pb-vv{display:flex;flex-wrap:wrap;gap:14px;clear:both;margin:18px 0}.pb-vv .yd-vid{flex:1 1 300px;margin:0;min-width:0}.pb-vv .yd-vid figcaption{text-align:center;font-weight:700}
+.yd-ban{width:100%;max-height:300px;object-fit:cover;border-radius:12px;border:1px solid var(--bd)}
+.yd-slogan{border-left:4px solid var(--gd);background:var(--hd);padding:8px 16px;border-radius:0 10px 10px 0;margin:12px 0;font-family:"Noto Serif","Times New Roman","Noto Serif","Times New Roman",Georgia,serif;font-style:italic}
+.yd-slogan p{margin:4px 0}
+.yd-links{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.yd-links a{display:inline-block;border:1px solid var(--gd);background:var(--hd);color:var(--ac);border-radius:20px;padding:3px 14px;font-size:14px;font-weight:600;text-decoration:none}
+.yd-links a:hover{background:var(--ac);color:var(--sf)}
+.yd-feat{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin:12px 0}
+.yd-feat>div{background:var(--bg);border:1px solid var(--bd);border-left:4px solid var(--gd);border-radius:10px;padding:10px 14px}
+.yd-ic{height:30px;width:auto;vertical-align:middle;margin:0 2px}.yd-rcp{margin:6px 0;padding:6px 10px;background:var(--hd);border:1px solid var(--bd);border-radius:10px;display:inline-block}
+code{background:var(--hd);padding:0 5px;border-radius:4px}
+.yd-feat b{color:var(--ac)}.yd-feat p{margin:4px 0 0;font-size:14.5px}
+.yd-gal{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin:14px 0}.yd-gal a{cursor:pointer;text-decoration:none}.yd-gal .fig{margin:0}
+.yd-fig img{max-width:240px;width:100%;background:#fffdec;border:1px solid var(--bd);border-radius:12px;padding:6px}
+.yd-fig figcaption{font-weight:600;color:var(--ac)}
+article h4.itn{margin:18px 0 6px;color:var(--gd);font-size:16px}

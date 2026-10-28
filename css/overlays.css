@@ -1,0 +1,14 @@
+/* ============================================================
+   Hộp tìm kiếm (Ctrl+K), lightbox ảnh, toast, in ấn
+   ============================================================ */
+#gs{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.55);display:none;padding:calc(8vh + env(safe-area-inset-top,0px)) 12px 12px}#gs.on{display:block}
+#gs .bx{max-width:660px;margin:0 auto;background:var(--sf);border:1px solid var(--gd);border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,.4);overflow:hidden}
+#gs input{width:100%;font:inherit;font-size:17px;padding:14px 16px;border:0;border-bottom:1px solid var(--bd);background:var(--sf);color:var(--tx);outline:0;border-radius:0}
+#gs ul{list-style:none;margin:0;padding:6px;max-height:min(58vh,480px);overflow:auto}#gs li a{display:block;padding:8px 12px;border-radius:8px;cursor:pointer;color:var(--tx);font-size:14.5px}
+#gs li a.on,#gs li a:hover{background:var(--hd)}#gs li b{color:var(--ac);font-size:16px}#gs li small{color:var(--mu);margin-left:8px}#gs li span{display:block;color:var(--mu);font-size:13.5px;line-height:1.45}
+#gs mark{background:var(--gd);color:var(--sf);border-radius:3px;padding:0 2px}
+#gs .ft{padding:8px 14px;border-top:1px solid var(--bd);color:var(--mu);font-size:12.5px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}#gs .ft button{font:inherit;border:1px solid var(--bd);background:var(--hd);color:var(--tx);border-radius:6px;padding:1px 9px;cursor:pointer}
+#lb{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.86);display:none;align-items:center;justify-content:center;flex-direction:column;gap:8px;padding:12px;cursor:zoom-out}#lb.on{display:flex}#lb img{max-width:96vw;max-height:88vh;object-fit:contain;background:#fffdec;border-radius:8px}#lb p{color:#eee;margin:0;font-size:14px}
+#ts{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ac);color:var(--sf);padding:8px 16px;border-radius:20px;z-index:70;opacity:0;pointer-events:none;transition:opacity .2s}#ts.on{opacity:1}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{html:root,html:root[data-theme]{--bg:#fff;--sf:#fff;--tx:#111;--mu:#444;--ac:#1c2a55;--gd:#7a5f10;--bd:#bbb;--hd:#eee}header,nav,.tabs,.bar,.fcs,.sumbar,#top,.cp,.pn2,#gs,#lb,#ts,.crumb{display:none!important}.layout{display:block}article section{break-inside:avoid-page}}

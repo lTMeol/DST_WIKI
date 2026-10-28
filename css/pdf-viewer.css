@@ -1,0 +1,8 @@
+/* ============================================================
+   Nút "Xem PDF" cạnh từng mục
+   ============================================================ */
+.pdfb{font:inherit;font-size:12px;font-weight:700;border:1px solid var(--gd);background:var(--hd);color:var(--ac);border-radius:20px;padding:1px 10px;margin-left:8px;cursor:pointer;white-space:nowrap;vertical-align:middle}
+.pdfb:hover{background:var(--ac);color:var(--sf)}
+.tr>div>.pdfb.top{display:block;margin:6px 0 10px}
+#pdm .hb .pg{flex:none;color:var(--mu);font-size:13px;white-space:nowrap}
+@media print{.pdfb{display:none!important}}

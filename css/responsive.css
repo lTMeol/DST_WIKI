@@ -1,0 +1,13 @@
+/* ============================================================
+   Chỉnh layout, focus, nút copy link, điều hướng trước/sau
+   ============================================================ */
+.layout{grid-template-columns:240px minmax(0,1fr)}article{min-width:0}
+@media(min-width:801px){nav{max-height:calc(100vh - 90px);max-height:calc(100dvh - 90px)}}
+@media(max-width:800px){.layout{grid-template-columns:minmax(0,1fr)}.tabs{flex-wrap:nowrap;overflow-x:auto;gap:6px;scrollbar-width:thin}.tabs a{flex:none;white-space:nowrap;padding:8px 14px}}
+@media(max-width:600px){#ht{display:none}header{gap:8px;padding:10px 12px}header a{font-size:16px}}
+#sbtn{margin-left:auto;background:none;border:1px solid var(--bd);color:var(--tx);border-radius:8px;padding:2px 10px;font-size:16px;cursor:pointer}#themebtn{margin-left:0}
+a[tabindex]:focus-visible,button:focus-visible,summary:focus-visible,#gs input:focus-visible{outline:2px solid var(--gd);outline-offset:2px}
+.cp{margin-left:8px;font-size:.6em;text-decoration:none;cursor:pointer;opacity:0;transition:opacity .15s}h2:hover .cp,h3:hover .cp,.cp:focus{opacity:1}@media(hover:none){.cp{opacity:.4}}
+.fig img,.gn,.emb,.pf,.rgp,.ps img,.chh>img,.tf{cursor:zoom-in}
+nav button.on{font-weight:700}code{overflow-wrap:anywhere}
+.pn2{display:flex;justify-content:space-between;gap:12px;margin-top:8px}.pn2 a{flex:1;max-width:49%;border:1px solid var(--bd);background:var(--sf);border-radius:12px;padding:10px 14px;cursor:pointer;color:var(--ac)}.pn2 a.nx{text-align:right;margin-left:auto}.pn2 a:hover{border-color:var(--gd)}.pn2 small{display:block;color:var(--mu)}
