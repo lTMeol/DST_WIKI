@@ -1,7 +1,7 @@
 /* Thần Thoại Thư Thuyết – bảng trang & hàm render (theo mẫu yem-doc-tien/index.js)
    Thêm tab mới: khai báo mảng TTx trong file riêng rồi thêm 1 dòng vào TTPAGES. */
 const TTICON='images/than-thoai/mod-icon.jpg';
-const TTPAGES={'':[TTS,'Tổng quan chủ đề'],'/world':[TTW,'Thế giới &amp; địa điểm'],'/npcs':[TTN,'NPC &amp; tương tác'],'/creatures':[TTC,'Thủ lĩnh &amp; quái vật'],'/artifacts':[TTA,'Luyện đan &amp; pháp bảo'],'/agriculture':[TTAG,'Nông nghiệp &amp; ẩm thực']};
+const TTPAGES={'':[TTS,'Tổng quan chủ đề'],'/world':[TTW,'Thế giới &amp; địa điểm'],'/npcs':[TTN,'NPC &amp; tương tác'],'/creatures':[TTC,'Thủ lĩnh &amp; quái vật'],'/artifacts':[TTA,'Luyện đan &amp; pháp bảo'],'/agriculture':[TTAG,'Nông nghiệp &amp; ẩm thực'],'/buildings':[TTB,'Kiến trúc &amp; sinh thái'],'/flight':[TTF,'Đằng vân &amp; kỹ năng']};
 function ttTabs(k){return `<div class="tabs">${Object.keys(TTPAGES).map(x=>`<a class="${x===k?'on':''}" onclick="go('#/mod/than-thoai${x}')">${TTPAGES[x][1]}</a>`).join('')}</div>`}
 function ttRender(h){
  const hh=h.split('@')[0],k=Object.keys(TTPAGES).find(x=>x&&hh.indexOf('#/mod/than-thoai'+x)==0)||'',SX=TTPAGES[k][0],NM=TTPAGES[k][1];
