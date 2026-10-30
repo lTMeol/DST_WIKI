@@ -2,7 +2,7 @@
    Thêm trang nhân vật: khai báo mảng NVx trong file riêng (vd nv-sun-wukong.js), thêm <script> vào index.html
    trước file này, rồi thêm 1 dòng vào NVPAGES, ví dụ '/sun-wukong':[NVSW,'Tôn Ngộ Không'] */
 const NVICON='images/than-thoai/mod-icon.jpg';
-const NVPAGES={'':[NVO,'Tổng quan nhân vật'],'/sun-wukong':[NVSW,'Tôn Ngộ Không'],'/nezha':[NVNZ,'Na Tra'],'/white-bone':[NVWB,'Bạch Cốt Phu Nhân'],'/pigsy':[NVPG,'Trư Bát Giới'],'/yangjian':[NVYJ,'Dương Tiễn']};
+const NVPAGES={'':[NVO,'Tổng quan nhân vật'],'/sun-wukong':[NVSW,'Tôn Ngộ Không'],'/nezha':[NVNZ,'Na Tra'],'/white-bone':[NVWB,'Bạch Cốt Phu Nhân'],'/pigsy':[NVPG,'Trư Bát Giới'],'/yangjian':[NVYJ,'Dương Tiễn'],'/yutu':[NVYT,'Ngọc Thố'],'/yama':[NVHB,'Hắc Bạch Vô Thường'],'/madameweb':[NVBT,'Bàn Ti Nương Nương']};
 function nvTabs(k){return `<div class="tabs">${Object.keys(NVPAGES).map(x=>`<a class="${x===k?'on':''}" onclick="go('#/mod/nhan-vat-than-thoai${x}')">${NVPAGES[x][1]}</a>`).join('')}</div>`}
 function nvRender(h){
  const hh=h.split('@')[0],k=Object.keys(NVPAGES).find(x=>x&&hh.indexOf('#/mod/nhan-vat-than-thoai'+x)==0)||'',SX=NVPAGES[k][0],NM=NVPAGES[k][1];
